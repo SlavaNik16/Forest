@@ -1,0 +1,14 @@
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.csproj.AssemblyReference.cache
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.GeneratedMSBuildEditorConfig.editorconfig
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.AssemblyInfoInputs.cache
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.AssemblyInfo.cs
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.csproj.CoreCompileInputs.cache
+X:\На всякий случай\C#\ForestRun\ForestRun\bin\Debug\netcoreapp3.1\ForestRun.exe
+X:\На всякий случай\C#\ForestRun\ForestRun\bin\Debug\netcoreapp3.1\ForestRun.deps.json
+X:\На всякий случай\C#\ForestRun\ForestRun\bin\Debug\netcoreapp3.1\ForestRun.runtimeconfig.json
+X:\На всякий случай\C#\ForestRun\ForestRun\bin\Debug\netcoreapp3.1\ForestRun.runtimeconfig.dev.json
+X:\На всякий случай\C#\ForestRun\ForestRun\bin\Debug\netcoreapp3.1\ForestRun.dll
+X:\На всякий случай\C#\ForestRun\ForestRun\bin\Debug\netcoreapp3.1\ForestRun.pdb
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.dll
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.pdb
+X:\На всякий случай\C#\ForestRun\ForestRun\obj\Debug\netcoreapp3.1\ForestRun.genruntimeconfig.cache

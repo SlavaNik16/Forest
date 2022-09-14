@@ -12,14 +12,20 @@ namespace ForestRun
             int i = 0;
             Random ran = new Random();
             Console.SetCursorPosition(one.x, one.y);
-            Console.WriteLine('|');
+            Console.Write('|');
+            var forestOne = '#';
+            Console.Write(forestOne);
             Console.SetCursorPosition(two.x, two.y);
-            Console.WriteLine('|');
+            var forestTwo = '@';
+            Console.Write('|');
+            Console.Write(forestTwo);
             while (run)
             {
                 one.Shag(ref ran, ref one.x, ref one.y);
                 two.Shag(ref ran, ref two.x, ref two.y);
-                Console.ReadKey(true);
+
+                Console.WriteLine(one.count);
+                Console.ReadKey();
             }
             
             //Console.SetCursorPosition(rob.x, rob.y);

@@ -98,7 +98,7 @@ namespace ForestRun
             if (count == 1)
             {
                 Console.SetCursorPosition(x += 30, y += 50);
-                Console.WriteLine("Перавая лошадь выиграла!");
+                Console.WriteLine("Первая лошадь выиграла!");
                 return false;
             }
             return true;

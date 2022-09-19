@@ -6,39 +6,103 @@ namespace ForestRun
 {
     class ForestTwo
     {
-        public int x = 18;
-        public int y = 7;
-        public int count = 0;   
-        
-        public void Shag(ref Random ran, ref int x, ref int y)
+        public int x = 80;
+        public int y = 5;
+        public int count = 0;
+        public bool up = false;
+        public bool down = false;
+        public bool left = false;
+        public bool right = true;
+        Random ran = new Random();
+
+        public void Shag(ref int x, ref int y)
         {
 
-            /*if((x >= 18 && x <=58) && y == 7)
+            if (x >= 70 && y == 5 && right)
             {
-                Console.SetCursorPosition(x += ran.Next(0, 4), y);              
-                Console.Write((char)(16));//17 30 31
+                if(x >= 75 && x <= 78)
+                {
+                    count++;                 
+                    right = false;
+                }
+                if (x >= 120)
+                {
+                    Console.WriteLine(' ');
+                    x = 120;
+                    Console.SetCursorPosition(x, y);
+                    right = false;
+                    down = true;
+                }
+                else
+                {
+                    Console.SetCursorPosition(x += ran.Next(0, 4), y);
+                    Console.Write((char)(16));
+                }
+                
             }
-            else if ( x >= 58 && (y >= 7 && y <= 22))
+            else if (x == 120 && y >= 5 && down)
             {
-                Console.SetCursorPosition(x, y+= ran.Next(0, 4));
-                Console.Write((char)(17));//17 30 31
+                if (y >= 24)
+                {
+                    Console.WriteLine(' ');
+                    y = 24;
+                    Console.SetCursorPosition(x, y);
+                    down = false;
+                    left = true;
+                }
+                else
+                {
+                    Console.SetCursorPosition(x, y += ran.Next(0, 4));
+                    Console.Write((char)(31));//17 30 31
+                }
+
 
             }
-            else if (x >= 18 && y <= 22)
+            else if (x <= 120 && y == 24 && left)
             {
-                Console.SetCursorPosition(x -= ran.Next(0, 4), y);
-                Console.Write((char)(30));//17 30 31
+                if (x <= 70)
+                {
+                    Console.WriteLine(' ');
+                    x = 70;
+                    Console.SetCursorPosition(x, y);
+                    left = false;
+                    up = true;
+                }
+                else
+                {
+                    Console.SetCursorPosition(x -= ran.Next(0, 4), y);
+                    Console.Write((char)(17));//17 30 31
+                }
+
 
             }
-            else if (x >= 18 &&  y <= 7)
+            else if (x == 70 && y <= 24 && up)
             {
-                Console.SetCursorPosition(x, y -= ran.Next(0, 4));
-                Console.Write((char)(31));//17 30 31
-
+                if (y <= 5)
+                {
+                    Console.WriteLine(' ');
+                    y = 5;
+                    Console.SetCursorPosition(x, y);
+                    up = false;
+                    right = true;
+                }
+                else
+                {
+                    Console.SetCursorPosition(x, y -= ran.Next(0, 4));
+                    Console.Write((char)(30));//17 30 31
+                }
             }
-            */
-
-
+           
+        }
+        public bool endTwo()
+        {
+            if (count == 1)
+            {
+                Console.SetCursorPosition(x -= 30, y += 30);
+                Console.WriteLine("Вторая лошадь выиграла!");
+                return false;
+            }
+            return true;
         }
     }
 }

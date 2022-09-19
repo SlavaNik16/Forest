@@ -13,11 +13,16 @@ namespace ForestRun
         public bool down = false;
         public bool left = false;
         public bool right = true;
-
-        public void Shag(ref Random ran, ref int x, ref int y)
+        Random ran = new Random();
+        public void Shag(ref int x, ref int y)
         {
             if (x >= 10 && y == 5 && right)
             {
+                if (x >= 15 && x <= 18)
+                {
+                    count++;
+                    right = false;
+                }
                 if (x >= 60)
                 {
                     Console.WriteLine(' ');
@@ -86,6 +91,17 @@ namespace ForestRun
             }
             
 
+        }
+
+        public bool endOne()
+        {
+            if (count == 1)
+            {
+                Console.SetCursorPosition(x += 30, y += 50);
+                Console.WriteLine("Перавая лошадь выиграла!");
+                return false;
+            }
+            return true;
         }
     }
 }

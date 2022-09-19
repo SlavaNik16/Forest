@@ -6,35 +6,39 @@ namespace ForestRun
     {
         static void Main(string[] args)
         {
+            Console.SetWindowSize(150, 60);
             bool run = true;
             ForestOne one = new ForestOne();
             ForestTwo two = new ForestTwo();
             int i = 0;
-            Random ran = new Random();
-            Console.SetCursorPosition(one.x, one.y);
+            //Random ran = new Random();
+            Console.SetCursorPosition(one.x-1, one.y);
             Console.Write('|');
-            var forestOne = '#';
-            Console.Write(forestOne);
-            Console.SetCursorPosition(two.x, two.y);
-            var forestTwo = '@';
+            Console.SetCursorPosition(two.x-1, two.y);   
             Console.Write('|');
-            Console.Write(forestTwo);
+
             while (run)
             {
-                one.Shag(ref ran, ref one.x, ref one.y);
-                two.Shag(ref ran, ref two.x, ref two.y);
-
-                Console.WriteLine(one.count);
+                
+                Console.SetCursorPosition(one.x, one.y);
+                one.Shag(ref one.x, ref one.y);
+                
+                Console.SetCursorPosition(two.x, two.y);
+                two.Shag(ref two.x, ref two.y);
+                if (run)
+                {
+                    run = one.endOne();
+                }
+                if (run)
+                {
+                    run = two.endTwo();
+                }
+               
+                
+                
                 Console.ReadKey();
             }
-            
-            //Console.SetCursorPosition(rob.x, rob.y);
-            //Console.CursorVisible = false;
-            //Console.Write((char)(127));
-
-
-
-            Console.ReadKey(true);
+         
         }
     }
 }
